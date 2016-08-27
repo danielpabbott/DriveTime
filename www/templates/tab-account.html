@@ -1,11 +1,11 @@
 <ion-view view-title="Account">
   <ion-content class="padding">
     <ion-list>
-      <ion-item>
+      <ion-item class="item-icon-right">
         Home Airport: {user.airport}
-        <ion-option-button class="button-dark">
-          <ion-icon class="ion-edit"></ion-icon>
-        </ion-option-button>
+        <div class="icon">
+          <span class="ion-edit"></span>
+        </div>
       </ion-item>
     </ion-list>
     <button class="button button-block button-assertive" ng-click="logout()">Logout</button>
