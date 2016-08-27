@@ -32,7 +32,7 @@ angular.module('starter.controllers', [])
 
     $scope.login = function() {
       LoginService.loginUser($scope.data.username, $scope.data.password).success(function(data) {
-        $state.go('tab-dash');
+        $state.go('tab.dash');
       }).error(function(data) {
         var alertPopup = $ionicPopup.alert({
           title: 'Login failed!',
