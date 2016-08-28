@@ -1,1 +1,7 @@
 /* Empty. Add your own CSS if you like */
+.platform-ios .bottomButton {
+  bottom: 40px;
+}
+ .platform-android .bottomButton {
+   bottom: 0px;
+ }
