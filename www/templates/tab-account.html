@@ -2,12 +2,26 @@
   <ion-content class="padding">
     <ion-list>
       <ion-item class="item-icon-right">
+        Username: {user.name}
+        <div class="icon">
+          <span class="ion-edit"></span>
+        </div>
+      </ion-item>
+      <ion-item class="item-icon-right">
+        Password: {user.password}
+        <div class="icon">
+          <span class="ion-edit"></span>
+        </div>
+      </ion-item>
+      <ion-item class="item-icon-right">
         Home Airport: {user.airport}
         <div class="icon">
           <span class="ion-edit"></span>
         </div>
       </ion-item>
     </ion-list>
-    <button class="button button-block button-assertive" ng-click="logout()">Logout</button>
   </ion-content>
+  <div style="position: absolute; bottom: 40px; width: 100%" class="padding">
+    <button class="button button-block button-assertive" ng-click="logout()">Logout</button>
+  </div>
 </ion-view>
