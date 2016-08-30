@@ -40,22 +40,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // Each tab has its own nav history stack:
 
-  .state('tab.dash', {
-    url: '/dash',
+  .state('tab.flights', {
+    url: '/flights',
     views: {
-      'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+      'tab-flights': {
+        templateUrl: 'templates/tab-flights.html',
+        controller: 'FlightsCtrl'
       }
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.concerts', {
+      url: '/concerts',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-concerts': {
+          templateUrl: 'templates/tab-concerts.html',
+          controller: 'ConcertsCtrl'
         }
       }
     })
@@ -69,12 +69,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-  .state('tab.account', {
-    url: '/account',
+  .state('tab.sports', {
+    url: '/sports',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'tab-sports': {
+        templateUrl: 'templates/tab-sports.html',
+        controller: 'SportsCtrl'
       }
     }
   })
@@ -88,6 +88,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   .state('register', {
     url: '/register',
     templateUrl: 'templates/register.html'
+  })
+
+  .state('account', {
+    url: '/account',
+    templateUrl: 'templates/account.html'
   });
 
   // if none of the above states are matched, use this as the fallback
