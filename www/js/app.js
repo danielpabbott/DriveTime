@@ -59,15 +59,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
-        }
-      }
-    })
 
   .state('tab.sports', {
     url: '/sports',
@@ -75,6 +66,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       'tab-sports': {
         templateUrl: 'templates/tab-sports.html',
         controller: 'SportsCtrl'
+      }
+    }
+  })
+
+  .state('tab.dashboard', {
+    url: '/dashboard',
+    views: {
+      'tab-dashboard': {
+      templateUrl: 'templates/tab-dashboard.html',
+      controller: 'DashboardCtrl'
+      }
+    }
+  })
+
+  .state('tab.account', {
+    url: '/account',
+    views: {
+      'tab-account': {
+        templateUrl: 'templates/tab-account.html',
+        controller: 'AccountCtrl'
       }
     }
   })
@@ -88,11 +99,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   .state('register', {
     url: '/register',
     templateUrl: 'templates/register.html'
-  })
-
-  .state('account', {
-    url: '/account',
-    templateUrl: 'templates/account.html'
   });
 
   // if none of the above states are matched, use this as the fallback
