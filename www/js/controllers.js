@@ -1,6 +1,10 @@
 angular.module('starter.controllers', [])
 
-.controller('FlightsCtrl', function($scope) {})
+.controller('FlightsCtrl', function($scope, flightsFactory) {
+  flightsFactory.getFlights().then(function(data) {
+    $scope.flightData = data;
+  })
+})
 
 .controller('DashboardCtrl', function($scope) {})
 

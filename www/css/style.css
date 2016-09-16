@@ -1,7 +1,12 @@
 /* Empty. Add your own CSS if you like */
-.platform-ios .bottomButton {
+.platform-ios .bottom {
   bottom: 40px;
 }
- .platform-android .bottomButton {
-   bottom: 0px;
- }
+
+.platform-android .bottom {
+  bottom: 0px;
+}
+
+.soundkick {
+  width: 50vw;
+}

@@ -60,6 +60,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+  .state('tab.account', {
+    url: '/account',
+    views: {
+      'tab-account': {
+        templateUrl: 'templates/tab-account.html',
+        controller: 'AccountCtrl'
+      }
+    }
+  })
+
   .state('tab.sports', {
     url: '/sports',
     views: {
@@ -76,16 +86,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       'tab-dashboard': {
       templateUrl: 'templates/tab-dashboard.html',
       controller: 'DashboardCtrl'
-      }
-    }
-  })
-
-  .state('tab.account', {
-    url: '/account',
-    views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
       }
     }
   })
