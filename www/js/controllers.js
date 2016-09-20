@@ -12,12 +12,11 @@ angular.module('starter.controllers', [])
 
 .controller('SportsCtrl', function($scope) {})
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
+.controller('RedRocksCtrl', function($scope) {})
+
+.controller('FiddlersCtrl', function($scope) {})
 
 .controller('AccountCtrl', function($scope, $state) {
-
   $scope.logout = function() {
     $state.go('login');
   }

@@ -11,7 +11,8 @@
   background-color: #00B3EC; }
 
 .main {
-  background-color: #A4A291; }
+  background-image: url("../img/city.jpg");
+  background-size: cover; }
 
 .footer {
   background-color: #513139; }
