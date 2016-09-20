@@ -1,12 +1,32 @@
-/* Empty. Add your own CSS if you like */
 .platform-ios .bottom {
-  bottom: 40px;
-}
+  bottom: 40px; }
 
 .platform-android .bottom {
-  bottom: 0px;
-}
+  bottom: 0px; }
 
 .soundkick {
-  width: 50vw;
-}
+  width: 50vw; }
+
+.top {
+  background-color: #00B3EC; }
+
+.main {
+  background-color: #A4A291; }
+
+.footer {
+  background-color: #513139; }
+
+.logout {
+  background-color: #E0004B;
+  color: #D6F6F9; }
+
+a .item {
+  background-color: #D6F6F9; }
+
+.darktext {
+  color: #444444; }
+
+.yellowtext {
+  color: #ffc900; }
+
+/*# sourceMappingURL=style.css.map */

@@ -16,13 +16,20 @@ angular.module('starter.controllers', [])
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
-.controller('AccountCtrl', function($scope) {})
+.controller('AccountCtrl', function($scope, $state) {
+
+  $scope.logout = function() {
+    $state.go('login');
+  }
+})
 
 .controller('LoginCtrl', function($scope, LoginService, $ionicPopup, $state) {
     $scope.data = {};
 
     $scope.login = function() {
       LoginService.loginUser($scope.data.username, $scope.data.password).success(function(data) {
+        $scope.data.username = "";
+        $scope.data.password = "";
         $state.go('tab.dashboard');
       }).error(function(data) {
         var alertPopup = $ionicPopup.alert({

@@ -1,0 +1,42 @@
+@import "colors";
+
+.platform-ios .bottom {
+  bottom: 40px;
+}
+
+.platform-android .bottom {
+  bottom: 0px;
+}
+
+.soundkick {
+  width: 50vw;
+}
+
+.top {
+  background-color: $darkblue;
+}
+
+.main {
+  background-color: $lightbrown;
+}
+
+.footer {
+  background-color: $darkbrown;
+}
+
+.logout {
+  background-color: $red;
+  color: $lightblue;
+}
+
+a .item {
+  background-color: $lightblue;
+}
+
+.darktext {
+  color: $darktext;
+}
+
+.yellowtext {
+  color: $yellow;
+}
